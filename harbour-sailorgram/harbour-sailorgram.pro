@@ -168,7 +168,6 @@ SAILFISHAPP_ICONS = \
 OTHER_FILES += \
     rpm/harbour-sailorgram.changes \
     rpm/harbour-sailorgram.spec \
-    rpm/harbour-sailorgram.yaml \
     harbour-sailorgram.desktop \
     qml/cover/*.png
 
