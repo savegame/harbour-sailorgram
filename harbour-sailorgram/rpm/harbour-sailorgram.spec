@@ -7,6 +7,7 @@ Name:       harbour-sailorgram
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
+
 Summary:    SailorGram
 Version:    0.89
 Release:    13
@@ -14,7 +15,6 @@ Group:      Qt/Qt
 License:    GPL3
 URL:        https://github.com/QtGram/harbour-sailorgram/
 Source0:    %{name}-%{version}.tar.bz2
-Source100:  harbour-sailorgram.yaml
 Source101:  harbour-sailorgram-rpmlintrc
 Requires:   sailfishsilica-qt5 >= 0.10.9
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
