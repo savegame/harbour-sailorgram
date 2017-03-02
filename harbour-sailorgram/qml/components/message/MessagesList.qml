@@ -27,10 +27,17 @@ SilicaListView
         return selectionlist;
     }
 
+    property int lastCount
+
+    Component.onCompleted: {
+        lastCount = count
+    }
+
     onCountChanged: {
-        if (model.newMessageIndex >= 0 && model.newMessageIndex < count) {
+        if (lastCount == 0 && model.newMessageIndex >= 0 && model.newMessageIndex < count) {
             positionViewAtIndex(model.newMessageIndex, ListView.Center);
         }
+        lastCount = count
     }
 
     Connections {
