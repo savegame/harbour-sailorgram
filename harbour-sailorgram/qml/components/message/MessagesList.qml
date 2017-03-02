@@ -83,7 +83,7 @@ SilicaListView
     }
 
     delegate: Column {
-        width: parent.width
+        width: ListView.view.width
         spacing: Theme.paddingSmall
 
         NewMessage { id: newmessage; visible: model.isMessageNew }
