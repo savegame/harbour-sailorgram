@@ -39,7 +39,7 @@ An unofficial Telegram Client for SailfishOS
 
 %build
 
-%qtc_qmake5 VERSION=%{version}
+%qtc_qmake5 APP_VERSION=%{version}
 
 %qtc_make %{?_smp_mflags}
 
