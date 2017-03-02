@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-sailorgram");
-    application->setApplicationVersion("0.9");
+    application->setApplicationVersion(QString(APP_VERSION));
 //    application->addLibraryPath(QString("%1/../share/%2/lib").arg(qApp->applicationDirPath(), qApp->applicationName()));
 
     QStringList args = application->arguments();

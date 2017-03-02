@@ -14,6 +14,8 @@ TARGET = harbour-sailorgram
 
 include($$PWD/../config.pri)
 
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+
 CONFIG += sailfishapp
 QT     += sql dbus multimedia
 

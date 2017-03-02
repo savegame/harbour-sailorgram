@@ -11,9 +11,9 @@ Item
     readonly property string apiHash: "5ce096f34c8afab871edce728e6d64c9"
     readonly property string hereAppId: "MqR7KyY6dZpTbKiFwc3h"
     readonly property string hereAppCode: "zfYp6V9Ou_wDQn4NVqMofA"
-    readonly property string version: "0.89"
+    readonly property string version: Qt.application.version
     readonly property bool beta: true
-    readonly property int betanum: 4
+    readonly property int betanum: 999
 
     readonly property bool reconnecting: reconnectTimer.running
 
