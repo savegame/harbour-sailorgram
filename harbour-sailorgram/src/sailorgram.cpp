@@ -19,6 +19,7 @@ SailorGram::SailorGram(QObject *parent): QObject(parent), _telegram(NULL), _daem
 
     connect(qApp, &QGuiApplication::applicationStateChanged, this, &SailorGram::onApplicationStateChanged);
     connect(this->_notifications, &TelegramNotifications::newMessage, this, &SailorGram::notify);
+    connect(this->_notifications, &TelegramNotifications::dismissNotification, this, &SailorGram::closeNotification);
     connect(this->_interface, &SailorgramInterface::wakeUpRequested, this, &SailorGram::onWakeUpRequested);
     connect(this->_interface, &SailorgramInterface::openDialogRequested, this, &SailorGram::openDialogRequested);
 }
