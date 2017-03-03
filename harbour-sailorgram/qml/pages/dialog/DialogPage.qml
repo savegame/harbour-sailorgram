@@ -104,6 +104,7 @@ Page
             statusText: messagesmodel.statusText
             peer: dialogpage.dialog
             visible: !context.chatheaderhidden && dialogpage.isPortrait
+            height: visible ? implicitHeight : 0
         }
 
         MessagesList
