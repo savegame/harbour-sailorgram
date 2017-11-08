@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.harbour.telega
+Exec=/usr/bin/invoker --type=generic /usr/bin/harbour-telega
+SystemdService=org.harbour.telega
