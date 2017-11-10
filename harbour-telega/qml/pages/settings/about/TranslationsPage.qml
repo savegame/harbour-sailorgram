@@ -13,19 +13,11 @@ Page
 
     SilicaFlickable
     {
+        id: flickable
         anchors.fill: parent
         contentHeight: content.height
 
-        VerticalScrollDecorator { flickable: parent }
-
-        PullDownMenu
-        {
-            MenuItem
-            {
-                text: qsTr("Translation Platform")
-                onClicked: Qt.openUrlExternally("https://www.transifex.com/projects/p/sailorgram")
-            }
-        }
+        VerticalScrollDecorator { flickable: flickable }
 
         Column
         {
