@@ -46,6 +46,7 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
+        contentHeight: dialogpage.height
 
         PushUpMenu
         {
