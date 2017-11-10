@@ -159,10 +159,6 @@ message(s)</source>
 <context>
     <name>DetailsPage</name>
     <message>
-        <source>%1&apos;s profile</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Enable notifications</source>
         <translation type="unfinished"></translation>
     </message>

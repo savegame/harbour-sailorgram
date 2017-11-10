@@ -26,7 +26,7 @@ Page
             width: parent.width
             spacing: Theme.paddingMedium
 
-            PageHeader { title: qsTr("%1's profile").arg(peerprofile.title) }
+            PageHeader {}
 
             PeerImage
             {
