@@ -266,10 +266,6 @@ message(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Details</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Forward</source>
         <translation type="unfinished"></translation>
     </message>

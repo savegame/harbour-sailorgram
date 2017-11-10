@@ -19,6 +19,13 @@ Page
     onStatusChanged: {
         context.core.notifications.currentDialog = (status === PageStatus.Active) ? dialogpage.dialog : null;
 
+        if(status === PageStatus.Active) {
+            pageStack.pushAttached(Qt.resolvedUrl("DetailsPage.qml"), {
+                                       context: dialogpage.context,
+                                       dialog: dialogpage.dialog
+                                   })
+        }
+
         if((status !== PageStatus.Active) || !firstLoad)
             return;
 
@@ -82,13 +89,6 @@ Page
                     if(messageslist.selectionMode)
                         dialogmediapanel.hide();
                 }
-            }
-
-            MenuItem
-            {
-                text: qsTr("Details")
-                visible: !messageslist.selectionMode
-                onClicked: pageStack.push(Qt.resolvedUrl("DetailsPage.qml"), { context: dialogpage.context, dialog: dialogpage.dialog })
             }
         }
 
