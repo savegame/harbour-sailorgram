@@ -1,4 +1,4 @@
-import QtQuick 2.1
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 import harbour.telega.LibQTelegram 1.0
 import "../../components/custom"
@@ -25,8 +25,7 @@ Page
             id: content
             width: parent.width
             spacing: Theme.paddingMedium
-
-            PageHeader {}
+            topPadding: Theme.paddingLarge
 
             PeerImage
             {
