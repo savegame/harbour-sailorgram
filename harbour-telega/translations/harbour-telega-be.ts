@@ -20,10 +20,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>SailorGram is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -40,7 +36,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About Telega</source>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Distributed under the GPLv3 license</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -130,29 +130,6 @@ message(s)</source>
     </message>
     <message>
         <source>Disconnected</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>DaemonSettingsPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keep running</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SailorGram keeps running in background even when closed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Autostart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SailorGram starts automatically</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -578,7 +555,7 @@ message(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Daemon</source>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -664,10 +641,6 @@ message(s)</source>
 </context>
 <context>
     <name>TranslationsPage</name>
-    <message>
-        <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>Translations</source>
         <translation type="unfinished"></translation>

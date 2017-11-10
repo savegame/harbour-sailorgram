@@ -5,42 +5,42 @@
     <name>AboutPage</name>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Репозиторий GitHub</translation>
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Сообщить о проблеме</translation>
     </message>
     <message>
         <source>An unofficial Telegram Client for SailfishOS</source>
-        <translation type="unfinished"></translation>
+        <translation>Неофициальный клиент Telegram для SailfishOS</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SailorGram is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработчики</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Переводчики</translation>
     </message>
     <message>
         <source>Third Party</source>
+        <translation type="unfinished">Сторонние проекты</translation>
+    </message>
+    <message>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About Telega</source>
+        <source>Distributed under the GPLv3 license</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -63,7 +63,7 @@
     <name>ChatSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Appearance</source>
@@ -134,29 +134,6 @@ message(s)</source>
     </message>
 </context>
 <context>
-    <name>DaemonSettingsPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keep running</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SailorGram keeps running in background even when closed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Autostart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SailorGram starts automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>DetailsPage</name>
     <message>
         <source>Enable notifications</source>
@@ -171,7 +148,7 @@ message(s)</source>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Разработчики</translation>
     </message>
     <message>
         <source>Author</source>
@@ -578,7 +555,7 @@ message(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Daemon</source>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -586,7 +563,7 @@ message(s)</source>
     <name>SignIn</name>
     <message>
         <source>Code</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Код</translation>
     </message>
     <message>
         <source>Sign In</source>
@@ -598,7 +575,7 @@ message(s)</source>
     </message>
     <message>
         <source>ERROR: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ошибка: %1</translation>
     </message>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign In&apos;</source>
@@ -609,49 +586,49 @@ message(s)</source>
     <name>SignUp</name>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign Up&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Дождитесь СМС с кодом активации и нажвите &apos;Вход&apos;</translation>
     </message>
     <message>
         <source>First Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Last Name (Optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Фамилия (не обязательно)</translation>
     </message>
     <message>
         <source>Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Код</translation>
     </message>
     <message>
         <source>Sign Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Вход</translation>
     </message>
     <message>
         <source>Sending request...</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправка запроса</translation>
     </message>
     <message>
         <source>ERROR: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка: %1</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Страница проекта</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyPage</name>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Сторонние проекты</translation>
     </message>
     <message>
         <source>The GPLv3 license</source>
@@ -665,12 +642,8 @@ message(s)</source>
 <context>
     <name>TranslationsPage</name>
     <message>
-        <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Переводчики</translation>
     </message>
     <message>
         <source>Coordinators</source>
@@ -689,34 +662,34 @@ message(s)</source>
     <name>TwoFactor</name>
     <message>
         <source>Submit</source>
-        <translation type="unfinished"></translation>
+        <translation>Подтвердить</translation>
     </message>
     <message>
         <source>Please enter your cloud password</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, введите пароль</translation>
     </message>
     <message>
         <source>Invalid password</source>
-        <translation type="unfinished"></translation>
+        <translation>Некорректный пароль</translation>
     </message>
     <message>
         <source>Your cloud password</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваш пароль</translation>
     </message>
     <message>
         <source>Hint: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Подсказка: %1</translation>
     </message>
     <message>
         <source>Sending request...</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправка запроса...</translation>
     </message>
 </context>
 <context>
     <name>WebPageMessage</name>
     <message>
         <source>Launching external web browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Открытие во внешнем веб-браузере</translation>
     </message>
 </context>
 </TS>

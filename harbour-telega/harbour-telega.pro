@@ -176,7 +176,6 @@ DISTFILES += \
     qml/pages/settings/about/ThirdPartyPage.qml \
     qml/pages/settings/about/TranslationsPage.qml \
     qml/pages/settings/ChatSettingsPage.qml \
-    qml/pages/settings/DaemonSettingsPage.qml \
     qml/components/message/NewMessage.qml \
     qml/components/message/MessageQuote.qml \
     qml/components/message/input/MessageTextInput.qml \

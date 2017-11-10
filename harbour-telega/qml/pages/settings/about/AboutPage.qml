@@ -19,13 +19,13 @@ Page
             MenuItem
             {
                 text: qsTr("GitHub Repository")
-                onClicked: Qt.openUrlExternally("https://github.com/QtGram/harbour-sailorgram")
+                onClicked: Qt.openUrlExternally("https://github.com/ckazzku/harbour-telega")
             }
 
             MenuItem
             {
                 text: qsTr("Report an Issue")
-                onClicked: Qt.openUrlExternally("https://github.com/QtGram/harbour-sailorgram/issues")
+                onClicked: Qt.openUrlExternally("https://github.com/ckazzku/harbour-telega/issues")
             }
         }
 
@@ -38,7 +38,7 @@ Page
             PageHeader
             {
                 id: pageheader
-                title: qsTr("About Telega")
+                title: qsTr("About")
             }
 
             Image
@@ -94,7 +94,7 @@ Page
                     font.pixelSize: Theme.fontSizeExtraSmall
                     wrapMode: Text.WordWrap
                     color: Theme.secondaryColor
-                    text: qsTr("SailorGram is distributed under the GPLv3 license")
+                    text: qsTr("Distributed under the GPLv3 license")
                 }
             }
 

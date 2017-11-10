@@ -8,7 +8,6 @@
         <file>res/daemon.png</file>
         <file>res/cover.png</file>
         <file>res/close.png</file>
-        <file>translations/translations.json</file>
         <file>res/twofactor.png</file>
     </qresource>
 </RCC>

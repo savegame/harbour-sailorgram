@@ -9,13 +9,6 @@ Page
 
     id: settingspage
 
-    onStatusChanged: {
-        if((status !== PageStatus.Active) || canNavigateForward)
-            return;
-
-        pageStack.pushAttached(Qt.resolvedUrl("about/AboutPage.qml"), { context: settingspage.context });
-    }
-
     SilicaFlickable
     {
         anchors.fill: parent
@@ -25,38 +18,27 @@ Page
         {
             id: content
             width: parent.width
+            spacing: Theme.paddingMedium
 
             PageHeader { title: qsTr("Settings") }
 
-            ClickableLabel
+            Button
             {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-sms"
+                width: parent.width * 0.7
+                anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Chats")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("ChatSettingsPage.qml"), { "context": settingspage.context })
+                onClicked: pageStack.push(Qt.resolvedUrl("ChatSettingsPage.qml"),
+                                          { "context": settingspage.context })
             }
 
-            ClickableLabel
+            Button
             {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                icon: "qrc:///res/daemon.png"
-                text: qsTr("Daemon") + " (Disabled)"
-                enabled: false
-                //onActionRequested: pageStack.push(Qt.resolvedUrl("DaemonSettingsPage.qml"), { "context": settingspage.context })
+                width: parent.width * 0.7
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("About")
+                onClicked: pageStack.push(Qt.resolvedUrl("about/AboutPage.qml"),
+                                          { "context": settingspage.context })
             }
-
-            /*
-            ClickableLabel
-            {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                icon: "qrc:///res/debug.png"
-                text: qsTr("Debug")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("DebugSettingsPage.qml"), { "context": settingspage.context })
-            }
-            */
         }
     }
 }
