@@ -189,7 +189,6 @@ DISTFILES += \
     qml/pages/dialog/chat/NewChannelPage.qml \
     qml/pages/dialog/chat/NewChatPage.qml \
     qml/pages/dialog/chat/NewGroupPage.qml \
-    qml/components/dialog/DialogNotificationSwitch.qml \
     qml/components/dialog/DialogMediaPanel.qml \
     qml/pages/selector/SelectorImagePage.qml \
     qml/pages/selector/SelectorFilePage.qml \

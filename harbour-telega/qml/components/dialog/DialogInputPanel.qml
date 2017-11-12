@@ -52,13 +52,6 @@ Column
 
     Item { width: parent.width; height: Theme.paddingSmall }
 
-    DialogNotificationSwitch
-    {
-        id: dialognotificationswitch
-        width: parent.width
-        visible: messagesmodel.isBroadcast && !messagesmodel.isWritable
-    }
-
     MessageInputPreview
     {
         id: messageinputpeview

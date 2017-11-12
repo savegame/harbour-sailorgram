@@ -106,7 +106,7 @@
     <name>ContactsPage</name>
     <message>
         <source>Contacts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Контакты</translation>
     </message>
 </context>
 <context>
@@ -114,60 +114,57 @@
     <message>
         <source>Unread
 message(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Непрочитанные
+сообщения</translation>
     </message>
     <message>
         <source>Connected</source>
-        <translation type="unfinished"></translation>
+        <translation>Подключено</translation>
     </message>
     <message>
         <source>Recent chats:</source>
-        <translation type="unfinished"></translation>
+        <translation>Последнее:</translation>
     </message>
     <message>
         <source>Syncing</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронизация</translation>
     </message>
     <message>
         <source>Disconnected</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключено</translation>
     </message>
 </context>
 <context>
     <name>DetailsPage</name>
     <message>
-        <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+        <source>Notifications</source>
+	<translation>Оповещения</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished">Разработчики</translation>
+        <translation>Разработчики</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор</translation>
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Контрибьюторы</translation>
     </message>
     <message>
         <source>Icon Designers</source>
-        <translation type="unfinished"></translation>
+        <translation>Дизайнеры иконок</translation>
     </message>
 </context>
 <context>
     <name>DialogModelItem</name>
     <message>
         <source>You</source>
-        <translation type="unfinished"></translation>
+        <translation>Я</translation>
     </message>
     <message>
         <source>Draft: %1</source>
@@ -178,11 +175,11 @@ message(s)</source>
     <name>DialogModelItemMenu</name>
     <message>
         <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
+	<translation>Включить оповещения</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+	<translation>Отключить оповещения</translation>
     </message>
     <message>
         <source>Clear history</source>
@@ -221,64 +218,64 @@ message(s)</source>
     <name>DialogNotificationSwitch</name>
     <message>
         <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Включить оповещения</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Отключить оповещения</translation>
     </message>
 </context>
 <context>
     <name>DialogPage</name>
     <message>
         <source>Sending location</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить координаты</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Выделить</translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Переслать</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Deleting messages</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление сообщений</translation>
     </message>
     <message>
         <source>Cancel selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменить выделение</translation>
     </message>
 </context>
 <context>
     <name>DialogsList</name>
     <message>
         <source>Connecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Подключение</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронизация</translation>
     </message>
     <message>
         <source>Chats</source>
-        <translation type="unfinished"></translation>
+        <translation>Чаты</translation>
     </message>
     <message>
         <source>Connection in %1...</source>
-        <translation type="unfinished"></translation>
+        <translation>Подключение %1...</translation>
     </message>
 </context>
 <context>
     <name>FileMessage</name>
     <message>
         <source>Opening %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Открытие %1</translation>
     </message>
 </context>
 <context>
@@ -292,11 +289,11 @@ message(s)</source>
     <name>ImageViewerPage</name>
     <message>
         <source>Save to downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить в загрузках</translation>
     </message>
     <message>
         <source>Image saved to downloads folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Картина сохранена в папке загрузки</translation>
     </message>
 </context>
 <context>
@@ -310,66 +307,66 @@ message(s)</source>
     <name>MainPage</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Contacts</source>
-        <translation type="unfinished"></translation>
+        <translation>Контакты</translation>
     </message>
     <message>
         <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый чат</translation>
     </message>
     <message>
         <source>Connect now</source>
-        <translation type="unfinished"></translation>
+        <translation>Подключиться сейчас</translation>
     </message>
 </context>
 <context>
     <name>MessageModelItem</name>
     <message>
         <source>Forwarded from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Переслано от %1</translation>
     </message>
 </context>
 <context>
     <name>MessageModelItemMenu</name>
     <message>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
 </context>
 <context>
     <name>MessagePanel</name>
     <message>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>MessageStatus</name>
     <message>
         <source>edited</source>
-        <translation type="unfinished"></translation>
+        <translation>изменено</translation>
     </message>
 </context>
 <context>
     <name>MessageText</name>
     <message>
         <source>Opening %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Открытие %1</translation>
     </message>
 </context>
 <context>
@@ -402,7 +399,7 @@ message(s)</source>
     <name>NewChatPage</name>
     <message>
         <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Новый чат</translation>
     </message>
     <message>
         <source>Create a Group</source>
@@ -548,11 +545,11 @@ message(s)</source>
     <name>SettingsPage</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Настройки</translation>
     </message>
     <message>
         <source>Chats</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Чаты</translation>
     </message>
     <message>
         <source>About</source>

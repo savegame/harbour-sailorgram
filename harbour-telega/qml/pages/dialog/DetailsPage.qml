@@ -63,16 +63,14 @@ Page
                 text: peerprofile.statusText
             }
 
-            ClickableLabel
-            {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                text: peerprofile.isMuted ? qsTr("Enable notifications") : qsTr("Disable notifications")
-
-                onActionRequested: {
-                    peerprofile.isMuted = !peerprofile.isMuted;
-                }
-            }
+            TextSwitch {
+                 id: notificationSwitch
+                 text: qsTr("Notifications")
+                 checked: !peerprofile.isMuted
+                 onCheckedChanged: {
+                     peerprofile.isMuted = !checked
+                 }
+             }
         }
     }
 }
