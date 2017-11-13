@@ -79,33 +79,12 @@ SilicaListView
                 dimmed: !messagemodelitem.selected
             }
 
-            Item {
-                id: picontainer
-                anchors.top: parent.top
-                x: Theme.paddingSmall
-                height: peerimage.height
-
-                width: {
-                    if(messagesmodel.isChat && !model.isMessageOut && !model.isMessageService)
-                        return peerimage.size;
-
-                    return 0;
-                }
-
-                PeerImage {
-                    id: peerimage
-                    size: Theme.iconSizeSmallPlus
-                    peer: model.needsPeerImage ? model.item : null
-                    visible: model.needsPeerImage && !model.isMessageOut && messagesmodel.isChat
-                }
-            }
-
             MessageModelItem {
                 id: messagemodelitem
                 maxWidth: width * 0.8
 
                 width: {
-                    var w = parent.width - picontainer.width;
+                    var w = parent.width;
 
                     if(selindicator.visible)
                         w -= selindicator.width;
