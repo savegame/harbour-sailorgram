@@ -214,17 +214,6 @@ message(s)</source>
     </message>
 </context>
 <context>
-    <name>DialogNotificationSwitch</name>
-    <message>
-        <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>DialogPage</name>
     <message>
         <source>Sending location</source>

@@ -138,7 +138,7 @@ message(s)</source>
     <name>DetailsPage</name>
     <message>
         <source>Notifications</source>
-	<translation>Оповещения</translation>
+        <translation>Оповещения</translation>
     </message>
 </context>
 <context>
@@ -175,11 +175,11 @@ message(s)</source>
     <name>DialogModelItemMenu</name>
     <message>
         <source>Enable notifications</source>
-	<translation>Включить оповещения</translation>
+        <translation>Включить оповещения</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-	<translation>Отключить оповещения</translation>
+        <translation>Отключить оповещения</translation>
     </message>
     <message>
         <source>Clear history</source>
@@ -212,17 +212,6 @@ message(s)</source>
     <message>
         <source>Deleting conversation</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>DialogNotificationSwitch</name>
-    <message>
-        <source>Enable notifications</source>
-        <translation type="unfinished">Включить оповещения</translation>
-    </message>
-    <message>
-        <source>Disable notifications</source>
-        <translation type="unfinished">Отключить оповещения</translation>
     </message>
 </context>
 <context>
