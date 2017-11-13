@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import harbour.telega.Model 1.0
-import "../../../components/about"
+import "../../components/about"
 
 Page
 {
@@ -10,10 +10,11 @@ Page
 
     SilicaFlickable
     {
+        id: flickable
         anchors.fill: parent
         contentHeight: content.height
 
-        VerticalScrollDecorator { flickable: parent }
+        VerticalScrollDecorator { flickable: flickable }
 
         Column
         {

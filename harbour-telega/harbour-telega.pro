@@ -171,11 +171,10 @@ DISTFILES += \
     qml/components/message/media/FileMessage.qml \
     qml/components/message/media/WebPageMessage.qml \
     qml/pages/settings/SettingsPage.qml \
-    qml/pages/settings/about/AboutPage.qml \
-    qml/pages/settings/about/DevelopersPage.qml \
-    qml/pages/settings/about/ThirdPartyPage.qml \
-    qml/pages/settings/about/TranslationsPage.qml \
-    qml/pages/settings/ChatSettingsPage.qml \
+    qml/pages/about/AboutPage.qml \
+    qml/pages/about/DevelopersPage.qml \
+    qml/pages/about/ThirdPartyPage.qml \
+    qml/pages/about/TranslationsPage.qml \
     qml/components/message/NewMessage.qml \
     qml/components/message/MessageQuote.qml \
     qml/components/message/input/MessageTextInput.qml \

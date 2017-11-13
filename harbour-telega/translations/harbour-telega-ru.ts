@@ -60,49 +60,6 @@
     </message>
 </context>
 <context>
-    <name>ChatSettingsPage</name>
-    <message>
-        <source>Save</source>
-        <translation>Сохранить</translation>
-    </message>
-    <message>
-        <source>Appearance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Chat header visible</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load images automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bubbles visible</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bubbles with angle</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bubble opacity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keyboard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Send Messages by pressing Return Key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use default emoji set</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>ContactsPage</name>
     <message>
         <source>Contacts</source>
@@ -309,6 +266,10 @@ message(s)</source>
     <message>
         <source>Connect now</source>
         <translation>Подключиться сейчас</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -533,15 +494,43 @@ message(s)</source>
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Settings</source>
-        <translation type="unfinished">Настройки</translation>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
     </message>
     <message>
-        <source>Chats</source>
-        <translation type="unfinished">Чаты</translation>
+        <source>Appearance</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About</source>
+        <source>Chat header visible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use default emoji set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images automatically</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bubbles visible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bubbles with angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bubble opacity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keyboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send Messages by pressing Return Key</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

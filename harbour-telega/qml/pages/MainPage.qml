@@ -48,6 +48,13 @@ Page
 
             MenuItem
             {
+                text: qsTr("About")
+                onClicked: pageStack.push(Qt.resolvedUrl("about/AboutPage.qml"),
+                                          { context: mainpage.context });
+            }
+
+            MenuItem
+            {
                 text: qsTr("Settings")
                 onClicked: pageStack.push(Qt.resolvedUrl("settings/SettingsPage.qml"), { context: mainpage.context });
             }
