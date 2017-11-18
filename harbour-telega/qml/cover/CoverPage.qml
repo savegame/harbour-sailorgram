@@ -21,58 +21,35 @@ CoverBackground
         fillMode: Image.PreserveAspectFit
     }
 
-    Column
-    {
-        id: colstatus
-        anchors { top: parent.top; left: parent.left; right: parent.right; topMargin: Theme.paddingMedium; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingSmall }
-        height: unreaditem.height + statusLabel.height
-
-        Item
-        {
-            id: unreaditem
-            height: lblunreadcount.contentHeight
-            width: lblunreadcount.contentWidth + lblunread.contentWidth
-
-            Label
-            {
-                id: lblunreadcount
-                text: context.telegram.unreadCount
-                font.pixelSize: Theme.fontSizeHuge
-                font.family: Theme.fontFamilyHeading
-            }
-
-            Label
-            {
-                id: lblunread
-                text: qsTr("Unread\nmessage(s)")
-                font.pixelSize: Theme.fontSizeExtraSmall
-                font.family: Theme.fontFamilyHeading
-                font.weight: Font.Light
-                lineHeight: 0.8
-                truncationMode: TruncationMode.Fade
-
-                anchors {
-                    left: lblunreadcount.right
-                    leftMargin: Theme.paddingMedium
-                    verticalCenter: lblunreadcount.verticalCenter
-                }
-            }
+    Rectangle {
+        id: rectstatus
+        height: Theme.itemSizeMedium
+        width: height
+        radius: height / 2
+        anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
         }
+        color: {
+            if(context.telegram.syncing)
+                return "yellow";
 
-        Label
-        {
-            id: statusLabel
-            width: parent.width
-            truncationMode: TruncationMode.Fade
+            if(context.telegram.connected)
+                return "lime";
 
-            text: {
-                if(context.telegram.syncing)
-                    return qsTr("Syncing");
+            return "red";
+        }
+        opacity: 0.5
 
-                return !context.telegram.connected ? qsTr("Disconnected") : qsTr("Connected")
+        Label {
+            id: lblunreadcount
+            anchors.centerIn: rectstatus
+            text: context.telegram.unreadCount
+            font {
+                pixelSize: Theme.fontSizeHuge
+                family: Theme.fontFamilyHeading
             }
-
-            color: !context.telegram.connected ? ColorScheme.reverseColor(Theme.highlightColor) : Theme.highlightColor
+            opacity: 0.9
         }
     }
 
@@ -81,7 +58,7 @@ CoverBackground
         id: colmessages
 
         anchors {
-            top: colstatus.bottom
+            top: rectstatus.bottom
             bottom: parent.bottom
             left: parent.left
             right: parent.right
@@ -89,19 +66,10 @@ CoverBackground
             leftMargin: Theme.paddingLarge
         }
 
-        Label
-        {
-            width: parent.width
-            text: qsTr("Recent chats:")
-            truncationMode: TruncationMode.Fade
-            font.pixelSize: Theme.fontSizeExtraSmall
-            color: Theme.primaryColor
-        }
-
         Repeater {
             model: DialogsCoverModel {
                 dialogsModel: (context.dialogs.initializing || context.dialogs.loading) ? null : context.dialogs
-                maxDialogs: 3
+                maxDialogs: 6
             }
 
             delegate: Label {

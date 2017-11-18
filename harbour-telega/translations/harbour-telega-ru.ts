@@ -67,31 +67,6 @@
     </message>
 </context>
 <context>
-    <name>CoverPage</name>
-    <message>
-        <source>Unread
-message(s)</source>
-        <translation>Непрочитанные
-сообщения</translation>
-    </message>
-    <message>
-        <source>Connected</source>
-        <translation>Подключено</translation>
-    </message>
-    <message>
-        <source>Recent chats:</source>
-        <translation>Последнее:</translation>
-    </message>
-    <message>
-        <source>Syncing</source>
-        <translation>Синхронизация</translation>
-    </message>
-    <message>
-        <source>Disconnected</source>
-        <translation>Отключено</translation>
-    </message>
-</context>
-<context>
     <name>DetailsPage</name>
     <message>
         <source>Notifications</source>
