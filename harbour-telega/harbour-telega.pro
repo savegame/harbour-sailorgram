@@ -147,8 +147,7 @@ RESOURCES += \
 SAILFISHAPP_ICONS = \
     86x86 \
     108x108 \
-    128x128 \
-    256x256
+    128x128
 
 OTHER_FILES += \
     rpm/harbour-telega.changes \
