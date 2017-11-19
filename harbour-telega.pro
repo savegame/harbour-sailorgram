@@ -1,11 +1,11 @@
 TEMPLATE = subdirs
 
-libqtelegram.file = LibQTelegram/LibQTelegram.pro
+libs.file = libs/libs.pro
+app.depends = libs
 
-app.depends = libqtelegram
-
-SUBDIRS += libqtelegram app
+SUBDIRS += app libs
 
 OTHER_FILES += \
+    .qmake.conf \
     rpm/harbour-telega.changes \
     rpm/harbour-telega.yaml

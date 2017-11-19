@@ -1,30 +1,9 @@
-# NOTICE:
-#
-# Application name defined in TARGET has a corresponding QML filename.
-# If name defined in TARGET is changed, the following needs to be done
-# to match new name:
-#   - corresponding QML filename must be changed
-#   - desktop icon filename must be changed
-#   - desktop filename must be changed
-#   - icon definition filename in desktop file must be changed
-#   - translation filenames have to be changed
-
-# The name of your application
 TARGET = harbour-telega
 
-include($$PWD/../config.pri)
-
-CONFIG += sailfishapp
+CONFIG += c++11 sailfishapp libqtelegram
 QT     += sql dbus multimedia
 
-LIBS += -L$$LIBQTELEGRAM_LIB_DIR -l$$LIBQTELEGRAM_LIB_NAME
-INCLUDEPATH += $$LIBQTELEGRAM_INCLUDE_PATH
-QMAKE_RPATHDIR += $$LIBQTELEGRAM_LIB_DIR
-
-# LibQTelegram
-libqtelegram.files = $$LIBQTELEGRAM_LIB_DIR/lib$${LIBQTELEGRAM_LIB_NAME}.so.*
-libqtelegram.path  = /usr/share/$$TARGET/lib
-INSTALLS += libqtelegram
+include($$TOP_SRC_DIR/libs/config.pri)
 
 # Telegram Public Key
 public_key.files = $$PWD/public.key
