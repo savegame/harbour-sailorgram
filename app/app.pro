@@ -150,8 +150,6 @@ SAILFISHAPP_ICONS = \
     128x128
 
 OTHER_FILES += \
-    rpm/harbour-telega.changes \
-    rpm/harbour-telega.yaml \
     harbour-telega.desktop \
     qml/cover/*.png
 
