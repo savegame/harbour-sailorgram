@@ -28,6 +28,7 @@ CoverBackground
         radius: height / 2
         anchors {
             top: parent.top
+            topMargin: Theme.paddingLarge
             horizontalCenter: parent.horizontalCenter
         }
         color: {
@@ -62,14 +63,14 @@ CoverBackground
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            topMargin: Theme.paddingSmall
+            topMargin: Theme.paddingMedium
             leftMargin: Theme.paddingLarge
         }
 
         Repeater {
             model: DialogsCoverModel {
                 dialogsModel: (context.dialogs.initializing || context.dialogs.loading) ? null : context.dialogs
-                maxDialogs: 6
+                maxDialogs: 5
             }
 
             delegate: Label {
