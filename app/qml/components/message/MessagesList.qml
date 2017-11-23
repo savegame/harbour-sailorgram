@@ -7,15 +7,19 @@ import "../../items"
 import "../../model"
 import "../peer"
 
-SilicaListView
-{
+SilicaListView {
+    id: messageslist
+    cacheBuffer: Screen.height * 2
+    verticalLayoutDirection: ListView.BottomToTop
+    currentIndex: -1
+
     readonly property alias dialogInputPanel: messageslist.headerItem
     property bool selectionMode: false
     property bool positionPending: false
     property var selectedMessages: null
 
     function getSelectionList() {
-        var selectionlist = [ ];
+        var selectionlist = [];
 
         for(var selindex in selectedMessages) {
             if(!selectedMessages.hasOwnProperty(selindex))
@@ -27,27 +31,9 @@ SilicaListView
         return selectionlist;
     }
 
-    Connections
-    {
-        target: dialogpage.context.positionSource
-
-        onPositionChanged: {
-            if(!positionPending)
-                return;
-
-            messagesmodel.sendLocation(dialogpage.context.positionSource.position.coordinate.latitude,
-                                       dialogpage.context.positionSource.position.coordinate.longitude);
-
-            positionPending = false;
-        }
+    Component.onCompleted: {
+        messageslist.positionViewAtIndex(model.newMessageIndex, ListView.Center)
     }
-
-    id: messageslist
-    cacheBuffer: Screen.height * 2
-    verticalLayoutDirection: ListView.BottomToTop
-    currentIndex: -1
-
-    Component.onCompleted: messageslist.positionViewAtIndex(model.newMessageIndex, ListView.Center);
 
     onSelectionModeChanged: {
         if(selectionMode) {
@@ -58,6 +44,20 @@ SilicaListView
         delete selectedMessages;
     }
 
+    Connections {
+        target: dialogpage.context.positionSource
+
+        onPositionChanged: {
+            if(!positionPending)
+                return;
+
+            var coord = dialogpage.context.positionSource.position.coordinate
+            messagesmodel.sendLocation(coord.latitude, coord.longitude);
+
+            positionPending = false;
+        }
+    }
+
     header: DialogInputPanel {
         width: messageslist.width
     }
@@ -66,13 +66,15 @@ SilicaListView
         width: parent.width
         spacing: Theme.paddingSmall
 
-        NewMessage { id: newmessage; visible: model.isMessageNew }
+        NewMessage {
+            id: newmessage
+            visible: model.isMessageNew
+        }
 
         Row {
             width: parent.width
 
-            GlassItem
-            {
+            GlassItem {
                 id: selindicator
                 anchors.verticalCenter: parent.verticalCenter
                 visible: selectionMode
@@ -81,14 +83,17 @@ SilicaListView
 
             MessageModelItem {
                 id: messagemodelitem
-                maxWidth: width * 0.8
+                maxWidth: {
+                    var w = width - 2 * Theme.paddingMedium;
+                    if(!messagesmodel.isBroadcast)
+                        w *= 0.9;
+                    return w;
+                }
 
                 width: {
                     var w = parent.width;
-
                     if(selindicator.visible)
                         w -= selindicator.width;
-
                     return w;
                 }
 
@@ -105,5 +110,7 @@ SilicaListView
         }
     }
 
-    VerticalScrollDecorator { flickable: messageslist }
+    VerticalScrollDecorator {
+        flickable: messageslist
+    }
 }

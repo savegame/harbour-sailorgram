@@ -10,6 +10,8 @@ import "../js/ColorScheme.js" as ColorScheme
 
 ListItem
 {
+    id: messagemodelitem
+
     readonly property color bubbleColor: {
         var c = ColorScheme.colorizeBubble(model.isMessageService, model.isMessageOut, context)
 
@@ -22,6 +24,7 @@ ListItem
     readonly property color textColor: ColorScheme.colorizeText(model.isMessageService, model.isMessageOut, context)
     readonly property color linkColor: ColorScheme.colorizeLink(model.isMessageService, model.isMessageOut, context)
     readonly property color quoteColor: linkColor
+    readonly property int padding: Theme.paddingMedium
 
     property bool selected: false
     property real maxWidth
@@ -29,8 +32,7 @@ ListItem
     signal replyRequested()
     signal editRequested()
 
-    id: messagemodelitem
-    contentHeight: content.height + Theme.paddingLarge
+    contentHeight: content.height + 2 * padding
 
     _backgroundColor: {
         if(context.bubbleshidden)
@@ -57,9 +59,10 @@ ListItem
         enabled: !messageslist.selectionMode
     }
 
-    MessageBubble
-    {
-        anchors { fill: content; margins: -Theme.paddingSmall }
+    MessageBubble {
+        width: content.width + messagemodelitem.padding
+        height: content.height + messagemodelitem.padding
+        anchors.centerIn: content
 
         visible: {
             if(context.bubbleshidden)
@@ -69,8 +72,7 @@ ListItem
         }
     }
 
-    Column
-    {
+    Column {
         id: content
 
         width: {
@@ -83,13 +85,13 @@ ListItem
                              mediamessageitem.contentWidth,
                              messagestatus.contentWidth);
 
-            return Math.min(w, maxWidth) + Theme.paddingSmall;
+            return Math.min(w, maxWidth);
         }
 
         anchors {
             top: parent.top
-            leftMargin: Theme.paddingMedium
-            rightMargin: Theme.paddingMedium
+            leftMargin: messagemodelitem.padding
+            rightMargin: messagemodelitem.padding
 
             left: {
                 if(model.isMessageService)
@@ -106,14 +108,16 @@ ListItem
             }
         }
 
-        MessageText
-        {
+        MessageText {
             id: lblfrom
             width: parent.width
             emojiPath: context.core.emojiPath
             elide: Text.ElideRight
             horizontalAlignment: Text.AlignLeft
-            font { bold: true; pixelSize: Theme.fontSizeSmall }
+            font {
+                bold: true
+                pixelSize: Theme.fontSizeSmall
+            }
             color: messagemodelitem.textColor
             linkColor: messagemodelitem.linkColor
             rawText: model.isMessageForwarded ? qsTr("Forwarded from %1").arg(model.forwardedFromName) : model.messageFrom
@@ -121,8 +125,7 @@ ListItem
             openUrls: !messageslist.selectionMode
         }
 
-        MessagePreviewItem
-        {
+        MessagePreviewItem {
             id: messagereplyitem
             width: parent.width
             quoteColor: messagemodelitem.quoteColor
@@ -142,8 +145,7 @@ ListItem
             }
         }
 
-        MediaMessageItem
-        {
+        MediaMessageItem {
             id: mediamessageitem
             message: model.item
             size: parent.width
@@ -202,13 +204,15 @@ ListItem
             }
         }
 
-        MessageText
-        {
+        MessageText {
             id: lblmessage
             width: parent.width
             emojiPath: context.core.emojiPath
             wrapMode: Text.Wrap
-            font { italic: model.isMessageService; pixelSize: model.isMessageService ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall }
+            font {
+                italic: model.isMessageService
+                pixelSize: model.isMessageService ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall
+            }
             color: messagemodelitem.textColor
             linkColor: messagemodelitem.linkColor
             openUrls: !messageslist.selectionMode
@@ -229,8 +233,7 @@ ListItem
             }
         }
 
-        MessageStatus
-        {
+        MessageStatus {
             id: messagestatus
             font.pixelSize: Theme.fontSizeTiny
             width: parent.width
