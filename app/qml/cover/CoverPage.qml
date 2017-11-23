@@ -4,14 +4,12 @@ import harbour.telega.Model 1.0
 import "../model"
 import "../js/ColorScheme.js" as ColorScheme
 
-CoverBackground
-{
+CoverBackground {
     property Context context
 
     id: coverpage
 
-    Image
-    {
+    Image {
         id: imgcover
         source: "qrc:///res/cover.png"
         asynchronous: true
@@ -22,7 +20,7 @@ CoverBackground
     }
 
     Rectangle {
-        id: rectstatus
+        id: rectunreadcount
         height: Theme.itemSizeMedium
         width: height
         radius: height / 2
@@ -31,20 +29,12 @@ CoverBackground
             topMargin: Theme.paddingLarge
             horizontalCenter: parent.horizontalCenter
         }
-        color: {
-            if(context.telegram.syncing)
-                return "yellow";
-
-            if(context.telegram.connected)
-                return "lime";
-
-            return "red";
-        }
+        color: Theme.highlightBackgroundColor
         opacity: 0.5
 
         Label {
             id: lblunreadcount
-            anchors.centerIn: rectstatus
+            anchors.centerIn: rectunreadcount
             text: context.telegram.unreadCount
             font {
                 pixelSize: Theme.fontSizeHuge
@@ -54,12 +44,11 @@ CoverBackground
         }
     }
 
-    Column
-    {
+    Column {
         id: colmessages
 
         anchors {
-            top: rectstatus.bottom
+            top: rectunreadcount.bottom
             bottom: parent.bottom
             left: parent.left
             right: parent.right
@@ -84,12 +73,11 @@ CoverBackground
         }
     }
 
-    CoverActionList
-    {
+    CoverActionList {
+        id: actionlist
         enabled: pageStack.currentPage.isMediaPage !== true
 
-        CoverAction
-        {
+        CoverAction {
             iconSource: "image://theme/icon-cover-message"
 
             onTriggered: {
@@ -98,13 +86,27 @@ CoverBackground
             }
         }
 
-        CoverAction
-        {
+        CoverAction {
             iconSource: context.core.notifications.mute ? "noalarmcover.png" : "alarmcover.png"
 
             onTriggered: {
                 context.core.notifications.mute = !context.core.notifications.mute;
             }
+        }
+    }
+
+    Rectangle {
+        id: rectstatus
+        height: Theme.paddingSmall
+        width: parent.width
+        anchors.bottom: parent.bottom
+        opacity: 0.5
+        color: {
+            if(context.telegram.syncing)
+                return "yellow";
+            if(context.telegram.connected)
+                return "lime";
+            return "red";
         }
     }
 }
