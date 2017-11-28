@@ -33,15 +33,15 @@
     </message>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished">Сторонние проекты</translation>
+	<translation>Сторонние проекты</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+	<translation>О программе</translation>
     </message>
     <message>
         <source>Distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+	<translation type="unfinished">Распространяется на условиях лицензии GPLv3</translation>
     </message>
 </context>
 <context>
@@ -63,7 +63,7 @@
     <name>ContactsPage</name>
     <message>
         <source>Contacts</source>
-        <translation type="unfinished">Контакты</translation>
+	<translation>Контакты</translation>
     </message>
 </context>
 <context>
@@ -74,15 +74,15 @@
     </message>
     <message>
         <source>Phone number: %1</source>
-        <translation type="unfinished"></translation>
+	<translation>Номер телефона: %1</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+	<translation>Инфо</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Настройки</translation>
+	<translation>Настройки</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation>Контрибьюторы</translation>
+	<translation>Участники</translation>
     </message>
     <message>
         <source>Icon Designers</source>
@@ -127,35 +127,35 @@
     </message>
     <message>
         <source>Clear history</source>
-        <translation type="unfinished"></translation>
+	<translation>Очистить историю</translation>
     </message>
     <message>
         <source>Clearing history</source>
-        <translation type="unfinished"></translation>
+	<translation>Очистка истории</translation>
     </message>
     <message>
         <source>Leave channel</source>
-        <translation type="unfinished"></translation>
+	<translation>Покинуть канал</translation>
     </message>
     <message>
         <source>Leave group</source>
-        <translation type="unfinished"></translation>
+	<translation>Покинуть группу</translation>
     </message>
     <message>
         <source>Delete conversation</source>
-        <translation type="unfinished"></translation>
+	<translation>Удалить беседу</translation>
     </message>
     <message>
         <source>Leaving channel</source>
-        <translation type="unfinished"></translation>
+	<translation>Покидание канала</translation>
     </message>
     <message>
         <source>Leaving group</source>
-        <translation type="unfinished"></translation>
+	<translation>Покидание группы</translation>
     </message>
     <message>
         <source>Deleting conversation</source>
-        <translation type="unfinished"></translation>
+	<translation>Удаление беседы</translation>
     </message>
 </context>
 <context>
@@ -215,7 +215,7 @@
     <name>ForwardPage</name>
     <message>
         <source>Forward message(s)</source>
-        <translation type="unfinished"></translation>
+	<translation>Переслать сообщение(я)</translation>
     </message>
 </context>
 <context>
@@ -233,7 +233,7 @@
     <name>LocationMessage</name>
     <message>
         <source>Opening location</source>
-        <translation type="unfinished"></translation>
+	<translation>Открытие геолокации</translation>
     </message>
 </context>
 <context>
@@ -256,7 +256,7 @@
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+	<translation>О программе</translation>
     </message>
 </context>
 <context>
@@ -303,112 +303,112 @@
     <name>MessageText</name>
     <message>
         <source>Opening %1</source>
-        <translation type="unfinished">Открытие %1</translation>
+	<translation>Открытие %1</translation>
     </message>
 </context>
 <context>
     <name>MessageTextInput</name>
     <message>
         <source>Message...</source>
-        <translation type="unfinished"></translation>
+	<translation>Сообщение...</translation>
     </message>
 </context>
 <context>
     <name>NewChannelPage</name>
     <message>
         <source>Create channel</source>
-        <translation type="unfinished"></translation>
+	<translation>Создать канал</translation>
     </message>
     <message>
         <source>New Channel</source>
-        <translation type="unfinished"></translation>
+	<translation>Новый канал</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+	<translation>Название</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+	<translation>Описание</translation>
     </message>
 </context>
 <context>
     <name>NewChatPage</name>
     <message>
         <source>New Chat</source>
-        <translation type="unfinished">Новый чат</translation>
+	<translation>Новый чат</translation>
     </message>
     <message>
         <source>Create a Group</source>
-        <translation type="unfinished"></translation>
+	<translation>Создать группу</translation>
     </message>
     <message>
         <source>Create a Channel</source>
-        <translation type="unfinished"></translation>
+	<translation>Создать канал</translation>
     </message>
     <message>
         <source>Cloud Chat</source>
-        <translation type="unfinished"></translation>
+	<translation>Облачный чат</translation>
     </message>
 </context>
 <context>
     <name>NewGroupPage</name>
     <message>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+	<translation>Заголовок</translation>
     </message>
     <message>
         <source>Create group</source>
-        <translation type="unfinished"></translation>
+	<translation>Создать группу</translation>
     </message>
     <message>
         <source>New Group</source>
-        <translation type="unfinished"></translation>
+	<translation>Новая группа</translation>
     </message>
 </context>
 <context>
     <name>NewMessage</name>
     <message>
         <source>%1   New messages   %1</source>
-        <translation type="unfinished"></translation>
+	<translation>%1   Новые сообщения   %1</translation>
     </message>
 </context>
 <context>
     <name>PhoneNumber</name>
     <message>
         <source>Insert your phone number and press &apos;Next&apos;</source>
-        <translation type="unfinished">Введите свой номер и нажмите &apos;Далее&apos;</translation>
+	<translation>Введите свой номер и нажмите &apos;Далее&apos;</translation>
     </message>
     <message>
         <source>Country Code</source>
-        <translation type="unfinished">Код страны</translation>
+	<translation>Код страны</translation>
     </message>
     <message>
         <source>Phone Number</source>
-        <translation type="unfinished">Номер телефона</translation>
+	<translation>Номер телефона</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+	<translation>Следующий</translation>
     </message>
     <message>
         <source>Sending request...</source>
-        <translation type="unfinished"></translation>
+	<translation>Отправка запроса....</translation>
     </message>
 </context>
 <context>
     <name>SelectorFilePage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+	<translation>Хранилище Android</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+	<translation>Карта SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+	<translation>Домашняя папка</translation>
     </message>
     <message numerus="yes">
         <source>Send %n file(s)</source>
