@@ -72,6 +72,18 @@
         <source>Notifications</source>
         <translation>Оповещения</translation>
     </message>
+    <message>
+        <source>Phone number: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Настройки</translation>
+    </message>
 </context>
 <context>
     <name>DevelopersPage</name>
