@@ -169,10 +169,12 @@ ListItem
                 title: mediamessageitem.venueTitle
                 address: mediamessageitem.venueAddress
                 color: messagemodelitem.textColor
-
+                imageWidth: maxWidth
+                imageHeight: maxWidth
                 source: {
-                    return context.locationThumbnail(mediamessageitem.geoPoint.latitude,
-                                                     mediamessageitem.geoPoint.longitude,
+                    var point = mediamessageitem.geoPoint;
+                    return context.locationThumbnail(point.latitude,
+                                                     point.longitude,
                                                      maxWidth, maxWidth, 14)
                 }
             }

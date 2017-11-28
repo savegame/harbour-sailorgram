@@ -4,9 +4,12 @@ import Sailfish.Silica 1.0
 import harbour.telega.LibQTelegram 1.0
 import harbour.telega.Core 1.0
 import "../js/Settings.js" as Settings
+import "../js/osm.js" as Osm
 
 Item
 {
+    id: context
+
     readonly property bool reconnecting: reconnectTimer.running
 
     readonly property int bubbleradius: {
@@ -112,14 +115,10 @@ Item
     }
 
     function locationThumbnail(latitude, longitude, width, height, z) {
-        return "https://maps.nlp.nokia.com/mia/1.6/mapview?" + "app_id=" + core.hereAppId + "&"
-                                                             + "app_code=" + core.hereAppCode + "&"
-                                                             + "nord&f=0&poithm=1&poilbl=0&"
-                                                             + "ctr=" + latitude + "," + longitude + "&"
-                                                             + "w=" + width + "&h=" + height + "&z=" + z;
+        var tileWidth = 256;
+        var tileHeight = 256;
+        return Osm.tile(longitude, latitude, z);
     }
-
-    id: context
 
     Component.onCompleted: {
         Settings.load(function(tx) {

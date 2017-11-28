@@ -19,8 +19,6 @@ class Core : public QObject
     Q_PROPERTY(QString hostIp READ hostIp CONSTANT FINAL)
     Q_PROPERTY(int hostPort READ hostPort CONSTANT FINAL)
     Q_PROPERTY(int dcId READ dcId CONSTANT FINAL)
-    Q_PROPERTY(QString hereAppId READ hereAppId CONSTANT FINAL)
-    Q_PROPERTY(QString hereAppCode READ hereAppCode CONSTANT FINAL)
     Q_PROPERTY(bool keepRunning READ keepRunning WRITE setKeepRunning NOTIFY keepRunningChanged)
     Q_PROPERTY(QString emojiPath READ emojiPath CONSTANT FINAL)
     Q_PROPERTY(QString publicKey READ publicKey CONSTANT FINAL)
@@ -41,8 +39,6 @@ class Core : public QObject
         QString hostIp() const;
         int hostPort() const;
         int dcId() const;
-        QString hereAppId() const;
-        QString hereAppCode() const;
         bool keepRunning() const;
         QString emojiPath() const;
         QString publicKey() const;

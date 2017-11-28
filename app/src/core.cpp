@@ -51,16 +51,6 @@ int Core::dcId() const
     return TELEGRAM_DC_ID;
 }
 
-QString Core::hereAppId() const
-{
-    return HERE_APP_ID;
-}
-
-QString Core::hereAppCode() const
-{
-    return HERE_APP_CODE;
-}
-
 bool Core::keepRunning() const
 {
     return !qApp->quitOnLastWindowClosed();

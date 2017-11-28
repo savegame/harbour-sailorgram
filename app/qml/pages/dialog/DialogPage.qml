@@ -134,9 +134,10 @@ Page
 
             onShareLocation: {
                 remorsepopup.execute(qsTr("Sending location"), function() {
-                    if(dialogpage.context.positionSource.valid) {
-                        messagesmodel.sendLocation(dialogpage.context.positionSource.position.coordinate.latitude,
-                                                   dialogpage.context.positionSource.position.coordinate.longitude);
+                    var positionSource = dialogpage.context.positionSource;
+                    if(positionSource.valid) {
+                        var coord = positionSource.position.coordinate;
+                        messagesmodel.sendLocation(coord.latitude, coord.longitude);
                         return;
                     }
 

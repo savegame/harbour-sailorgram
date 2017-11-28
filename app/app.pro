@@ -1,7 +1,7 @@
 TARGET = harbour-telega
 
 CONFIG += c++11 sailfishapp libqtelegram
-QT     += sql dbus multimedia
+QT     += sql dbus multimedia qml network
 
 include($$TOP_SRC_DIR/libs/config.pri)
 
@@ -49,7 +49,9 @@ HEADERS += \
     src/core.h \
     src/defines.h \
     src/dbus/interface/dbusinterface.h \
-    src/dbus/interface/dbusadaptor.h
+    src/dbus/interface/dbusadaptor.h \
+    src/network/networkaccessmanager.h \
+    src/network/networkaccessmanagerfactory.h
 
 # Sources
 SOURCES += \
@@ -66,7 +68,9 @@ SOURCES += \
     src/model/dialogscovermodel.cpp \
     src/core.cpp \
     src/dbus/interface/dbusinterface.cpp \
-    src/dbus/interface/dbusadaptor.cpp
+    src/dbus/interface/dbusadaptor.cpp \
+    src/network/networkaccessmanager.cpp \
+    src/network/networkaccessmanagerfactory.cpp
 
 # QML
 OTHER_FILES += \
@@ -74,10 +78,6 @@ OTHER_FILES += \
     qml/items/message/ForwardItem.qml \
     qml/items/sticker/StickerCategory.qml \
     qml/model/Context.qml \
-    qml/js/CountryList.js \
-    qml/js/Emoji.js \
-    qml/js/Settings.js \
-    qml/js/TextElaborator.js \
     qml/pages/MainPage.qml \
     qml/components/login/PhoneNumber.qml \
     qml/components/login/SignIn.qml \
@@ -89,15 +89,13 @@ OTHER_FILES += \
     qml/pages/contact/ContactsPage.qml \
     qml/items/ContactModelItem.qml \
     qml/components/contact/ContactsList.qml \
-    qml/cover/CoverPage.qml \
-    qml/js/ColorScheme.js
+    qml/cover/CoverPage.qml
 
 # Translations
 CONFIG += sailfishapp_i18n
 
 OTHER_FILES += \
-    translations/*.ts \
-    update_translations_json.sh
+    translations/*.ts
 
 TRANSLATIONS += \
     translations/harbour-telega-be.ts \

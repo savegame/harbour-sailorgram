@@ -12,6 +12,8 @@
 
 #define EMOJI_FOLDER "emoji"
 
+#define NETWORK_USER_AGENT "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+
 // Telegram API
 #define TELEGRAM_API_ID 171211
 #define TELEGRAM_API_HASH "7eac40b28e0c14296de77867358481dd"
@@ -19,9 +21,5 @@
 #define TELEGRAM_HOST_PORT 443
 #define TELEGRAM_DC_ID 2
 #define TELEGRAM_PUBLIC_KEY_FILE "public.key"
-
-// Here API
-#define HERE_APP_ID "MqR7KyY6dZpTbKiFwc3h"
-#define HERE_APP_CODE "zfYp6V9Ou_wDQn4NVqMofA"
 
 #endif // DEFINES_H

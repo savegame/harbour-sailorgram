@@ -8,6 +8,7 @@
 #include "model/dialogscovermodel.h"
 #include "core.h"
 #include "defines.h"
+#include "network/networkaccessmanagerfactory.h"
 
 int main(int argc, char *argv[])
 {
@@ -44,6 +45,10 @@ int main(int argc, char *argv[])
     QQmlEngine* engine = view->engine();
     QObject::connect(engine, SIGNAL(quit()), application.data(), SLOT(quit()));
     engine->addImageProvider(QStringLiteral("thumbnail"), new ThumbnailProvider);
+
+    NetworkAccessManagerFactory namfactory;
+    namfactory.setUserAgent(NETWORK_USER_AGENT);
+    engine->setNetworkAccessManagerFactory(&namfactory);
 
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
     view->show();
