@@ -52,8 +52,7 @@ CoverBackground {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            topMargin: Theme.paddingLarge
-            margins: Theme.paddingMedium
+            margins: Theme.paddingLarge
         }
 
         Repeater {
