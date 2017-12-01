@@ -602,7 +602,7 @@
     </message>
     <message>
         <source>Attribution 4.0 International (CC BY 4.0)</source>
-	<translation>С указанием авторства 4.0 Всемирная (CC BY 4.0)</translation>
+        <translation>С указанием авторства 4.0 Всемирная (CC BY 4.0)</translation>
     </message>
 </context>
 <context>
