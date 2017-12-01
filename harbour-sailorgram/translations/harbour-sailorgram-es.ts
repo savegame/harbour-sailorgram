@@ -320,6 +320,17 @@ message(s)</source>
     </message>
 </context>
 <context>
+    <name>ImageSendPage</name>
+    <message>
+        <source>Send image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ImageViewerPage</name>
     <message>
         <source>Save to downloads</source>

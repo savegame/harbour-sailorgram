@@ -233,4 +233,5 @@ DISTFILES += \
     qml/components/custom/BlurredImage.qml \
     qml/components/message/preview/MessagePreviewImage.qml \
     qml/components/message/preview/MessagePreviewItem.qml \
-    qml/components/message/media/StickerMessage.qml
+    qml/components/message/media/StickerMessage.qml \
+    qml/pages/media/ImageSendPage.qml

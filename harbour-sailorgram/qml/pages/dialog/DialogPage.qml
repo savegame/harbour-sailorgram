@@ -1,11 +1,13 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import Sailfish.Pickers 1.0
 import harbour.sailorgram.LibQTelegram 1.0
 import "../../components/dialog"
 import "../../components/message/panel"
 import "../../components/message"
 import "../../components/custom"
 import "../../model"
+import "../media"
 
 Page
 {
@@ -39,6 +41,7 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
+        property url selectedImageUrl: ""
 
         PushUpMenu
         {
@@ -110,17 +113,47 @@ Page
             clip: true
         }
 
+        QtObject {
+            id: internalSettings
+            property url imageUrl:""
+        }
+
+        Component {
+            id: imageSendPage
+            ImageSendPage {
+//                id: sendPage
+                imageUrl: internalSettings.imageUrl
+                onAccepted: messagesmodel.sendPhoto(imageUrl, messageText );
+            }
+        }
+
+        Component {
+            id: imagePickerPage
+            ImagePickerPage {
+                onSelectedContentPropertiesChanged: {
+                    //selectedImage.source = selectedContentProperties.filePath
+                    //messagesmodel.sendPhoto(selectedContentProperties.url, selectedContentProperties.title);
+                    internalSettings.imageUrl = selectedContentProperties.url
+//                    pageStack.replace
+                    pageStack.replace(imageSendPage)
+                }
+            }
+        }
+
         DialogMediaPanel
         {
             id: dialogmediapanel
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
 
             onShareImage: {
-                var imageselector = pageStack.push(Qt.resolvedUrl("../../pages/selector/SelectorImagePage.qml"), { context: dialogpage.context });
-
-                imageselector.imageSelected.connect(function(image) {
-                    messagesmodel.sendPhoto(image, "");
-                });
+                //var imageselector = pageStack.push(Qt.resolvedUrl("../../pages/selector/SelectorImagePage.qml"), { context: dialogpage.context });
+                var imageselector = pageStack.push(imagePickerPage)
+//                imageselector.onSelectedContentPropertiesChanged.connect( functio() {
+//                                      }
+//                                      )
+//                imageselector.imageSelected.connect(function(image) {
+//                    messagesmodel.sendPhoto(image, "");
+//                });
             }
 
             onShareFile: {
@@ -144,5 +177,6 @@ Page
                 });
             }
         }
+
     }
 }
