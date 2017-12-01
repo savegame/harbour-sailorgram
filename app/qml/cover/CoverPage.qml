@@ -52,8 +52,8 @@ CoverBackground {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            topMargin: Theme.paddingMedium
-            leftMargin: Theme.paddingLarge
+            topMargin: Theme.paddingLarge
+            margins: Theme.paddingMedium
         }
 
         Repeater {
@@ -66,9 +66,9 @@ CoverBackground {
                 width: colmessages.width
                 elide: Text.ElideRight
                 truncationMode: TruncationMode.Fade
-                font.pixelSize: Theme.fontSizeSmall
+                font.pixelSize: Theme.fontSizeExtraSmall
                 color: model.unreadCount > 0 ? Theme.highlightColor : Theme.primaryColor
-                text: model.title
+                text: model.title.toLowerCase()
             }
         }
     }
