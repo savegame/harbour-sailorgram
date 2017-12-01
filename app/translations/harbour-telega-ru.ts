@@ -82,11 +82,11 @@
     </message>
     <message>
         <source>Username: @%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Юзернейм: @%1</translation>
     </message>
     <message>
         <source>Phone number: +%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Телефон: +%1</translation>
     </message>
 </context>
 <context>
