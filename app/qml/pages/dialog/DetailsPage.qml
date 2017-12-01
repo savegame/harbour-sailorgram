@@ -77,7 +77,7 @@ Page {
                 Column {
                     id: colinfo
                     width: parent.width
-                    visible: peerprofile.hasPhoneNumber && peerprofile.hasUsername
+                    visible: peerprofile.hasPhoneNumber || peerprofile.hasUsername
 
                     SectionHeader {
                         text: qsTr("Info")
