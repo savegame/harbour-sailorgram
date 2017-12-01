@@ -46,15 +46,7 @@ Page {
                 font.family: Theme.fontFamilyHeading
                 font.bold: true
                 elide: Text.ElideRight
-
-                text: {
-                    if(peerprofile.hasUsername) {
-                        return "%1 (@%2)".arg(peerprofile.title)
-                                         .arg(peerprofile.username);
-                    }
-
-                    return peerprofile.title;
-                }
+                text: peerprofile.title
             }
 
             Label {
@@ -84,12 +76,10 @@ Page {
 
                 Column {
                     id: colinfo
-                    visible: peerprofile.hasPhoneNumber
+                    width: parent.width
+                    visible: peerprofile.hasPhoneNumber && peerprofile.hasUsername
 
-                    Label {
-                        id: lblinfo
-                        font.pixelSize: coldata.fontSize
-                        color: Theme.highlightColor
+                    SectionHeader {
                         text: qsTr("Info")
                     }
 
@@ -98,17 +88,25 @@ Page {
                         x: Theme.paddingLarge
                         font.pixelSize: coldata.fontSize
                         color: Theme.primaryColor
-                        text: qsTr("Phone number: %1").arg(peerprofile.phoneNumber)
+                        text: qsTr("Phone number: +%1").arg(peerprofile.phoneNumber)
+                        visible: peerprofile.hasPhoneNumber
+                    }
+
+                    Label {
+                        id: username
+                        x: Theme.paddingLarge
+                        font.pixelSize: coldata.fontSize
+                        color: Theme.primaryColor
+                        text: qsTr("Username: @%1").arg(peerprofile.username)
+                        visible: peerprofile.hasUsername
                     }
                 }
 
                 Column {
                     id: colsettings
+                    width: parent.width
 
-                    Label {
-                        id: lblsettings
-                        font.pixelSize: coldata.fontSize
-                        color: Theme.highlightColor
+                    SectionHeader {
                         text: qsTr("Settings")
                     }
 

@@ -33,15 +33,15 @@
     </message>
     <message>
         <source>Third Party</source>
-	<translation>Сторонние проекты</translation>
+        <translation>Сторонние проекты</translation>
     </message>
     <message>
         <source>About</source>
-	<translation>О программе</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>Distributed under the GPLv3 license</source>
-	<translation type="unfinished">Распространяется на условиях лицензии GPLv3</translation>
+	<translation>Распространяется на условиях лицензии GPLv3</translation>
     </message>
 </context>
 <context>
@@ -63,7 +63,7 @@
     <name>ContactsPage</name>
     <message>
         <source>Contacts</source>
-	<translation>Контакты</translation>
+        <translation>Контакты</translation>
     </message>
 </context>
 <context>
@@ -73,16 +73,20 @@
         <translation>Оповещения</translation>
     </message>
     <message>
-        <source>Phone number: %1</source>
-	<translation>Номер телефона: %1</translation>
-    </message>
-    <message>
         <source>Info</source>
-	<translation>Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Settings</source>
-	<translation>Настройки</translation>
+        <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Username: @%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Phone number: +%1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -97,7 +101,7 @@
     </message>
     <message>
         <source>Contributors</source>
-	<translation>Участники</translation>
+        <translation>Участники</translation>
     </message>
     <message>
         <source>Icon Designers</source>
@@ -127,35 +131,35 @@
     </message>
     <message>
         <source>Clear history</source>
-	<translation>Очистить историю</translation>
+        <translation>Очистить историю</translation>
     </message>
     <message>
         <source>Clearing history</source>
-	<translation>Очистка истории</translation>
+        <translation>Очистка истории</translation>
     </message>
     <message>
         <source>Leave channel</source>
-	<translation>Покинуть канал</translation>
+        <translation>Покинуть канал</translation>
     </message>
     <message>
         <source>Leave group</source>
-	<translation>Покинуть группу</translation>
+        <translation>Покинуть группу</translation>
     </message>
     <message>
         <source>Delete conversation</source>
-	<translation>Удалить беседу</translation>
+        <translation>Удалить беседу</translation>
     </message>
     <message>
         <source>Leaving channel</source>
-	<translation>Покидание канала</translation>
+        <translation>Покидание канала</translation>
     </message>
     <message>
         <source>Leaving group</source>
-	<translation>Покидание группы</translation>
+        <translation>Покидание группы</translation>
     </message>
     <message>
         <source>Deleting conversation</source>
-	<translation>Удаление беседы</translation>
+        <translation>Удаление беседы</translation>
     </message>
 </context>
 <context>
@@ -215,7 +219,7 @@
     <name>ForwardPage</name>
     <message>
         <source>Forward message(s)</source>
-	<translation>Переслать сообщение(я)</translation>
+        <translation>Переслать сообщение(я)</translation>
     </message>
 </context>
 <context>
@@ -233,7 +237,7 @@
     <name>LocationMessage</name>
     <message>
         <source>Opening location</source>
-	<translation>Открытие геолокации</translation>
+        <translation>Открытие геолокации</translation>
     </message>
 </context>
 <context>
@@ -256,7 +260,7 @@
     </message>
     <message>
         <source>About</source>
-	<translation>О программе</translation>
+        <translation>О программе</translation>
     </message>
 </context>
 <context>
@@ -303,101 +307,132 @@
     <name>MessageText</name>
     <message>
         <source>Opening %1</source>
-	<translation>Открытие %1</translation>
+        <translation>Открытие %1</translation>
     </message>
 </context>
 <context>
     <name>MessageTextInput</name>
     <message>
         <source>Message...</source>
-	<translation>Сообщение...</translation>
+        <translation>Сообщение...</translation>
     </message>
 </context>
 <context>
     <name>NewChannelPage</name>
     <message>
         <source>Create channel</source>
-	<translation>Создать канал</translation>
+        <translation>Создать канал</translation>
     </message>
     <message>
         <source>New Channel</source>
-	<translation>Новый канал</translation>
+        <translation>Новый канал</translation>
     </message>
     <message>
         <source>Name</source>
-	<translation>Название</translation>
+        <translation>Название</translation>
     </message>
     <message>
         <source>Description</source>
-	<translation>Описание</translation>
+        <translation>Описание</translation>
     </message>
 </context>
 <context>
     <name>NewChatPage</name>
     <message>
         <source>New Chat</source>
-	<translation>Новый чат</translation>
+        <translation>Новый чат</translation>
     </message>
     <message>
         <source>Create a Group</source>
-	<translation>Создать группу</translation>
+        <translation>Создать группу</translation>
     </message>
     <message>
         <source>Create a Channel</source>
-	<translation>Создать канал</translation>
+        <translation>Создать канал</translation>
     </message>
     <message>
         <source>Cloud Chat</source>
-	<translation>Облачный чат</translation>
+        <translation>Облачный чат</translation>
     </message>
 </context>
 <context>
     <name>NewGroupPage</name>
     <message>
         <source>Title</source>
-	<translation>Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Create group</source>
-	<translation>Создать группу</translation>
+        <translation>Создать группу</translation>
     </message>
     <message>
         <source>New Group</source>
-	<translation>Новая группа</translation>
+        <translation>Новая группа</translation>
     </message>
 </context>
 <context>
     <name>NewMessage</name>
     <message>
         <source>%1   New messages   %1</source>
-	<translation>%1   Новые сообщения   %1</translation>
+        <translation>%1   Новые сообщения   %1</translation>
     </message>
 </context>
 <context>
     <name>PhoneNumber</name>
     <message>
         <source>Insert your phone number and press &apos;Next&apos;</source>
-	<translation>Введите свой номер и нажмите &apos;Далее&apos;</translation>
+        <translation>Введите свой номер и нажмите &apos;Далее&apos;</translation>
     </message>
     <message>
         <source>Country Code</source>
-	<translation>Код страны</translation>
+        <translation>Код страны</translation>
     </message>
     <message>
         <source>Phone Number</source>
-	<translation>Номер телефона</translation>
+        <translation>Номер телефона</translation>
     </message>
     <message>
         <source>Next</source>
-	<translation>Следующий</translation>
+        <translation>Следующий</translation>
     </message>
     <message>
         <source>Sending request...</source>
-	<translation>Отправка запроса....</translation>
+        <translation>Отправка запроса....</translation>
     </message>
 </context>
 <context>
     <name>SelectorFilePage</name>
+    <message>
+        <source>Android storage</source>
+        <translation>Хранилище Android</translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation>Карта SD</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation>Домашняя папка</translation>
+    </message>
+    <message numerus="yes">
+        <source>Send %n file(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Select files</source>
+	<translation>Выбрать файлы</translation>
+    </message>
+    <message>
+	<source>Back</source>
+	<translation>Назад</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorImagePage</name>
     <message>
         <source>Android storage</source>
 	<translation>Хранилище Android</translation>
@@ -410,52 +445,21 @@
         <source>Home</source>
 	<translation>Домашняя папка</translation>
     </message>
-    <message numerus="yes">
-        <source>Send %n file(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Select files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SelectorImagePage</name>
-    <message>
-        <source>Android storage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>Sort ascending</source>
-        <translation type="unfinished"></translation>
+	<translation>Сортировать по возрастанию</translation>
     </message>
     <message>
         <source>Sort descending</source>
-        <translation type="unfinished"></translation>
+	<translation>Сортировать по убыванию</translation>
     </message>
     <message>
         <source>Sort by name</source>
-        <translation type="unfinished"></translation>
+	<translation>Сортировать по имени</translation>
     </message>
     <message>
         <source>Sort by date</source>
-        <translation type="unfinished"></translation>
+	<translation>Сортировать по дате</translation>
     </message>
     <message numerus="yes">
         <source>Send %n image(s)</source>
@@ -467,88 +471,88 @@
     </message>
     <message>
         <source>Select images</source>
-        <translation type="unfinished"></translation>
+	<translation>Выбрать картинки</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+	<translation>Назад</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+	<translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+	<translation>Сохранить</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+	<translation>Внешний вид</translation>
     </message>
     <message>
         <source>Chat header visible</source>
-        <translation type="unfinished"></translation>
+	<translation>Показывать заголовок чата</translation>
     </message>
     <message>
         <source>Use default emoji set</source>
-        <translation type="unfinished"></translation>
+	<translation>Использовать стандартные эмоджи</translation>
     </message>
     <message>
         <source>Load images automatically</source>
-        <translation type="unfinished"></translation>
+	<translation>Загружать картинки автоматически</translation>
     </message>
     <message>
         <source>Bubbles visible</source>
-        <translation type="unfinished"></translation>
+	<translation>Показывать фон сообщений</translation>
     </message>
     <message>
         <source>Bubbles with angle</source>
-        <translation type="unfinished"></translation>
+	<translation>Фон сообщений с углами</translation>
     </message>
     <message>
         <source>Bubble opacity</source>
-        <translation type="unfinished"></translation>
+	<translation>Прозрачность фона сообщений</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"></translation>
+	<translation>Клавиатура</translation>
     </message>
     <message>
         <source>Send Messages by pressing Return Key</source>
-        <translation type="unfinished"></translation>
+	<translation>Отправлять сообщения кнопкой Return</translation>
     </message>
 </context>
 <context>
     <name>SignIn</name>
     <message>
         <source>Code</source>
-        <translation type="unfinished">Код</translation>
+	<translation>Код</translation>
     </message>
     <message>
         <source>Sign In</source>
-        <translation type="unfinished"></translation>
+	<translation>Войти</translation>
     </message>
     <message>
         <source>Sending request...</source>
-        <translation type="unfinished"></translation>
+	<translation>Отправка запроса...</translation>
     </message>
     <message>
         <source>ERROR: %1</source>
-        <translation type="unfinished">Ошибка: %1</translation>
+	<translation>Ошибка: %1</translation>
     </message>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign In&apos;</source>
-        <translation type="unfinished"></translation>
+	<translation>Дождитесь СМС с кодом активации и нажвите &apos;Вход&apos;</translation>
     </message>
 </context>
 <context>
     <name>SignUp</name>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign Up&apos;</source>
-        <translation>Дождитесь СМС с кодом активации и нажвите &apos;Вход&apos;</translation>
+	<translation>Дождитесь СМС с кодом активации и нажмите &apos;Зарегистрироваться&apos;</translation>
     </message>
     <message>
         <source>First Name</source>
@@ -594,22 +598,22 @@
     </message>
     <message>
         <source>The GPLv3 license</source>
-        <translation type="unfinished"></translation>
+	<translation>Лицензия GPLv3</translation>
     </message>
     <message>
-        <source>Attribution 4.0 International (CC BY 4.0)</source>
-        <translation type="unfinished"></translation>
+	<source>С указанием авторства 4.0 Всемирная (CC BY 4.0)</source>
+	<translation></translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translations</source>
-        <translation type="unfinished">Переводчики</translation>
+	<translation>Переводчики</translation>
     </message>
     <message>
         <source>Coordinators</source>
-        <translation type="unfinished"></translation>
+	<translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translators</source>
