@@ -41,7 +41,7 @@
     </message>
     <message>
         <source>Distributed under the GPLv3 license</source>
-	<translation>Распространяется на условиях лицензии GPLv3</translation>
+        <translation>Распространяется на условиях лицензии GPLv3</translation>
     </message>
 </context>
 <context>
@@ -424,42 +424,42 @@
     </message>
     <message>
         <source>Select files</source>
-	<translation>Выбрать файлы</translation>
+        <translation>Выбрать файлы</translation>
     </message>
     <message>
-	<source>Back</source>
-	<translation>Назад</translation>
+        <source>Back</source>
+        <translation>Назад</translation>
     </message>
 </context>
 <context>
     <name>SelectorImagePage</name>
     <message>
         <source>Android storage</source>
-	<translation>Хранилище Android</translation>
+        <translation>Хранилище Android</translation>
     </message>
     <message>
         <source>SD Card</source>
-	<translation>Карта SD</translation>
+        <translation>Карта SD</translation>
     </message>
     <message>
         <source>Home</source>
-	<translation>Домашняя папка</translation>
+        <translation>Домашняя папка</translation>
     </message>
     <message>
         <source>Sort ascending</source>
-	<translation>Сортировать по возрастанию</translation>
+        <translation>Сортировать по возрастанию</translation>
     </message>
     <message>
         <source>Sort descending</source>
-	<translation>Сортировать по убыванию</translation>
+        <translation>Сортировать по убыванию</translation>
     </message>
     <message>
         <source>Sort by name</source>
-	<translation>Сортировать по имени</translation>
+        <translation>Сортировать по имени</translation>
     </message>
     <message>
         <source>Sort by date</source>
-	<translation>Сортировать по дате</translation>
+        <translation>Сортировать по дате</translation>
     </message>
     <message numerus="yes">
         <source>Send %n image(s)</source>
@@ -471,88 +471,88 @@
     </message>
     <message>
         <source>Select images</source>
-	<translation>Выбрать картинки</translation>
+        <translation>Выбрать картинки</translation>
     </message>
     <message>
         <source>Back</source>
-	<translation>Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <source>Cancel</source>
-	<translation>Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Save</source>
-	<translation>Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Appearance</source>
-	<translation>Внешний вид</translation>
+        <translation>Внешний вид</translation>
     </message>
     <message>
         <source>Chat header visible</source>
-	<translation>Показывать заголовок чата</translation>
+        <translation>Показывать заголовок чата</translation>
     </message>
     <message>
         <source>Use default emoji set</source>
-	<translation>Использовать стандартные эмоджи</translation>
+        <translation>Использовать стандартные эмоджи</translation>
     </message>
     <message>
         <source>Load images automatically</source>
-	<translation>Загружать картинки автоматически</translation>
+        <translation>Загружать картинки автоматически</translation>
     </message>
     <message>
         <source>Bubbles visible</source>
-	<translation>Показывать фон сообщений</translation>
+        <translation>Показывать фон сообщений</translation>
     </message>
     <message>
         <source>Bubbles with angle</source>
-	<translation>Фон сообщений с углами</translation>
+        <translation>Фон сообщений с углами</translation>
     </message>
     <message>
         <source>Bubble opacity</source>
-	<translation>Прозрачность фона сообщений</translation>
+        <translation>Прозрачность фона сообщений</translation>
     </message>
     <message>
         <source>Keyboard</source>
-	<translation>Клавиатура</translation>
+        <translation>Клавиатура</translation>
     </message>
     <message>
         <source>Send Messages by pressing Return Key</source>
-	<translation>Отправлять сообщения кнопкой Return</translation>
+        <translation>Отправлять сообщения кнопкой Return</translation>
     </message>
 </context>
 <context>
     <name>SignIn</name>
     <message>
         <source>Code</source>
-	<translation>Код</translation>
+        <translation>Код</translation>
     </message>
     <message>
         <source>Sign In</source>
-	<translation>Войти</translation>
+        <translation>Войти</translation>
     </message>
     <message>
         <source>Sending request...</source>
-	<translation>Отправка запроса...</translation>
+        <translation>Отправка запроса...</translation>
     </message>
     <message>
         <source>ERROR: %1</source>
-	<translation>Ошибка: %1</translation>
+        <translation>Ошибка: %1</translation>
     </message>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign In&apos;</source>
-	<translation>Дождитесь СМС с кодом активации и нажвите &apos;Вход&apos;</translation>
+        <translation>Дождитесь СМС с кодом активации и нажвите &apos;Вход&apos;</translation>
     </message>
 </context>
 <context>
     <name>SignUp</name>
     <message>
         <source>Wait for the SMS containing the activation code and press &apos;Sign Up&apos;</source>
-	<translation>Дождитесь СМС с кодом активации и нажмите &apos;Зарегистрироваться&apos;</translation>
+        <translation>Дождитесь СМС с кодом активации и нажмите &apos;Зарегистрироваться&apos;</translation>
     </message>
     <message>
         <source>First Name</source>
@@ -598,22 +598,22 @@
     </message>
     <message>
         <source>The GPLv3 license</source>
-	<translation>Лицензия GPLv3</translation>
+        <translation>Лицензия GPLv3</translation>
     </message>
     <message>
-	<source>С указанием авторства 4.0 Всемирная (CC BY 4.0)</source>
-	<translation></translation>
+        <source>Attribution 4.0 International (CC BY 4.0)</source>
+	<translation>С указанием авторства 4.0 Всемирная (CC BY 4.0)</translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translations</source>
-	<translation>Переводчики</translation>
+        <translation>Переводчики</translation>
     </message>
     <message>
         <source>Coordinators</source>
-	<translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translators</source>
