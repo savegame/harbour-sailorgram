@@ -23,7 +23,7 @@ MouseArea
 
     onClicked: {
         messagepopup.popup(qsTr("Launching external web browser"));
-        Qt.resolvedUrl(destinationUrl);
+        Qt.openUrlExternally(destinationUrl);
     }
 
     Column
