@@ -9,18 +9,26 @@ Item
 
     id: animatedmessage
 
-    MediaPlayer { id: mediaplayer; autoPlay: false; autoLoad: false; loops: MediaPlayer.Infinite }
+    MediaPlayer {
+        id: mediaplayer;
+        autoPlay: false;
+        autoLoad: false;
+        loops: MediaPlayer.Infinite
+    }
     VideoOutput { anchors.fill: parent; source: mediaplayer }
     BusyIndicator { size: BusyIndicatorSize.Small; anchors.centerIn: parent; running: mediamessageitem.downloading }
 
     BlurredImage
     {
+        id: thumb
         anchors.fill: parent
         source: mediamessageitem.thumbnail
         showActions: false
+        visible: (mediaplayer.playbackState !== MediaPlayer.PlayingState) && mediamessageitem.downloaded
     }
 
     Image {
+        id: playBtn
         source: "image://theme/icon-m-play"
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
@@ -37,10 +45,17 @@ Item
         onClicked: {
             if(mediamessageitem.downloaded) {
                 if(mediaplayer.playbackState !== MediaPlayer.PlayingState)
+                {
                     mediaplayer.play();
+                    thumb.visible = false;
+                    playBtn.visible = false;
+                }
                 else
+                {
                     mediaplayer.stop();
-
+                    thumb.visible = true;
+                    playBtn.visible = true;
+                }
                 return;
             }
 
