@@ -10,7 +10,13 @@ Label
     property string emojiPath
     property string rawText
 
-    Text { id: txthidden; visible: false; text: messagetext.text; font: messagetext.font; wrapMode: Text.NoWrap }
+    Text {
+        id: txthidden;
+        visible: false;
+        text: messagetext.text;
+        font: messagetext.font;
+        wrapMode: Text.Wrap
+    }
 
     id: messagetext
     textFormat: Text.StyledText

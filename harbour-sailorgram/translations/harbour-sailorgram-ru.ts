@@ -33,7 +33,7 @@
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Разработчики</translation>
     </message>
     <message>
         <source>Translations</source>
@@ -63,7 +63,7 @@
     <name>ChatSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Appearance</source>
@@ -75,50 +75,45 @@
     </message>
     <message>
         <source>Load images automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Загружать изображения автоматически</translation>
     </message>
     <message>
         <source>Bubbles visible</source>
-        <translation type="unfinished"></translation>
+        <translation>Рамка вокруг сообщений</translation>
     </message>
     <message>
         <source>Bubbles with angle</source>
-        <translation type="unfinished"></translation>
+        <translation>Отобажать угол рамки</translation>
     </message>
     <message>
         <source>Bubble opacity</source>
-        <translation type="unfinished"></translation>
+        <translation>Прозрачность рамки</translation>
     </message>
     <message>
         <source>Keyboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Клавиатура</translation>
     </message>
     <message>
         <source>Send Messages by pressing Return Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить сообщение нажатием клавиши Enter</translation>
     </message>
     <message>
         <source>Use default emoji set</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать встроенные Emoji смайлки</translation>
     </message>
 </context>
 <context>
     <name>ContactsPage</name>
     <message>
         <source>Contacts</source>
-        <translation type="unfinished"></translation>
+        <translation>Контакты</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
-        <source>Unread
-message(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Connected</source>
-        <translation type="unfinished"></translation>
+        <translation>В сети</translation>
     </message>
     <message>
         <source>Recent chats:</source>
@@ -130,6 +125,11 @@ message(s)</source>
     </message>
     <message>
         <source>Disconnected</source>
+        <translation>Не в сети</translation>
+    </message>
+    <message>
+        <source>Unread
+message(s)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -137,7 +137,7 @@ message(s)</source>
     <name>DaemonSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Сохранить</translation>
     </message>
     <message>
         <source>Keep running</source>
@@ -164,18 +164,18 @@ message(s)</source>
     </message>
     <message>
         <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить уведомления</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключить уведомления</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработчики</translation>
     </message>
     <message>
         <source>Author</source>
@@ -205,11 +205,11 @@ message(s)</source>
     <name>DialogModelItemMenu</name>
     <message>
         <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Включить уведомления</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Выключить уведомления</translation>
     </message>
     <message>
         <source>Clear history</source>
@@ -248,11 +248,11 @@ message(s)</source>
     <name>DialogNotificationSwitch</name>
     <message>
         <source>Enable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Включить уведомления</translation>
     </message>
     <message>
         <source>Disable notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Выключить уведомления</translation>
     </message>
 </context>
 <context>
@@ -356,7 +356,7 @@ message(s)</source>
     </message>
     <message>
         <source>Contacts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Контакты</translation>
     </message>
     <message>
         <source>New Chat</source>

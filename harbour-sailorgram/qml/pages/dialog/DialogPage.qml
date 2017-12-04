@@ -41,8 +41,7 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
-        property url selectedImageUrl: ""
-
+        
         PushUpMenu
         {
             enabled: !dialogmediapanel.expanded

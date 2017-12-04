@@ -16,35 +16,39 @@ Dialog {
 //        title: qsTr("Send Image")
     }
 
-    Image {
-        id: currentImage
-        height: parent.height * 0.33
-        source: imageSendPage.imageUrl
-        anchors {
-            top: dialogHeader.bottom
-            left: parent.left
-            right: parent.right
-            topMargin: Theme.paddingMedium
-        }
-        fillMode:  Image.PreserveAspectFit
-        asynchronous: true
-//        autoTransform : true
-    }
-
-    TextArea {
-        id: message
-        anchors {
-            top: currentImage.bottom
-            left: parent.left
-            right: parent.right
-            bottom: parent.bottom
-            topMargin: Theme.paddingMedium
-            leftMargin: Theme.paddingMedium
-            rightMargin: Theme.paddingMedium
-            bottomMargin: Theme.paddingMedium
+    SilicaFlickable
+    {
+        anchors.fill: parent
+        Image {
+            id: currentImage
+            height: parent.height * 0.33
+            source: imageSendPage.imageUrl
+            anchors {
+                top: dialogHeader.bottom
+                left: parent.left
+                right: parent.right
+                topMargin: Theme.paddingMedium
+            }
+            fillMode:  Image.PreserveAspectFit
+            asynchronous: true
+    //        autoTransform : true
         }
 
-        onTextChanged: messageText = text
+        TextArea {
+            id: message
+            anchors {
+                top: currentImage.bottom
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+                topMargin: Theme.paddingMedium
+                leftMargin: Theme.paddingMedium
+                rightMargin: Theme.paddingMedium
+                bottomMargin: Theme.paddingMedium
+            }
+
+            onTextChanged: messageText = text
+        }
     }
 }
 
