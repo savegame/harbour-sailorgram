@@ -7,7 +7,7 @@ import "../../components/message/panel"
 import "../../components/message"
 import "../../components/custom"
 import "../../model"
-import "../media"
+import "../../pages/media"
 
 Page
 {
@@ -122,7 +122,9 @@ Page
             ImageSendPage {
 //                id: sendPage
                 imageUrl: internalSettings.imageUrl
-                onAccepted: messagesmodel.sendPhoto(imageUrl, messageText );
+                onAccepted: {
+                    messagesmodel.sendPhoto(imageUrl, messageText );
+                }
             }
         }
 

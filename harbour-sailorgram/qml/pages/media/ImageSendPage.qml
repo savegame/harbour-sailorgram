@@ -1,7 +1,9 @@
 import QtQuick 2.2
+import QtQuick.Window 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
+    id: imageSendPageDialog
     anchors.fill: parent
     allowedOrientations: defaultAllowedOrientations
     property url    imageUrl: ""
@@ -9,38 +11,43 @@ Dialog {
 
     onImageUrlChanged: currentImage.source = imageUrl
 
-    DialogHeader {
-        id: dialogHeader
-        acceptText: qsTr("Send image")
-        cancelText: qsTr("Cancel")
-//        title: qsTr("Send Image")
-    }
-
     SilicaFlickable
     {
-        anchors.fill: parent
+        id: flick
+        anchors{
+            top: dialogHeader.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        ScrollDecorator {
+            id: flickable
+            flickable: flick
+        }
+
         Image {
             id: currentImage
-            height: parent.height * 0.33
+            height: Screen.desktopAvailableHeight * 0.33
             source: imageSendPage.imageUrl
             anchors {
-                top: dialogHeader.bottom
+                top: parent.top
                 left: parent.left
                 right: parent.right
                 topMargin: Theme.paddingMedium
             }
             fillMode:  Image.PreserveAspectFit
             asynchronous: true
-    //        autoTransform : true
         }
 
         TextArea {
             id: message
+            //height: Screen.desktopAvailableHeight * 0.33
             anchors {
                 top: currentImage.bottom
                 left: parent.left
                 right: parent.right
-                bottom: parent.bottom
+                //bottom: parent.bottom
                 topMargin: Theme.paddingMedium
                 leftMargin: Theme.paddingMedium
                 rightMargin: Theme.paddingMedium
@@ -49,6 +56,15 @@ Dialog {
 
             onTextChanged: messageText = text
         }
+
+        contentHeight: message.height + currentImage.height
+    }
+
+    DialogHeader {
+        id: dialogHeader
+        acceptText: qsTr("Send image")
+        cancelText: qsTr("Cancel")
+    //        title: qsTr("Send Image")
     }
 }
 
