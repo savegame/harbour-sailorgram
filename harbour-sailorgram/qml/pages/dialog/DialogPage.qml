@@ -115,6 +115,7 @@ Page
         QtObject {
             id: internalSettings
             property url imageUrl:""
+//            property bool sendCompressed: true
         }
 
         Component {
@@ -123,7 +124,10 @@ Page
 //                id: sendPage
                 imageUrl: internalSettings.imageUrl
                 onAccepted: {
-                    messagesmodel.sendPhoto(imageUrl, messageText );
+                    if ( sendCompressed )
+                        messagesmodel.sendPhoto(imageUrl, messageText );
+                    else
+                        messagesmodel.sendFile(imageUrl, messageText );
                 }
             }
         }
@@ -149,12 +153,6 @@ Page
             onShareImage: {
                 //var imageselector = pageStack.push(Qt.resolvedUrl("../../pages/selector/SelectorImagePage.qml"), { context: dialogpage.context });
                 var imageselector = pageStack.push(imagePickerPage)
-//                imageselector.onSelectedContentPropertiesChanged.connect( functio() {
-//                                      }
-//                                      )
-//                imageselector.imageSelected.connect(function(image) {
-//                    messagesmodel.sendPhoto(image, "");
-//                });
             }
 
             onShareFile: {

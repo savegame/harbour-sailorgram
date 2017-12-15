@@ -322,6 +322,18 @@ message(s)</source>
 <context>
     <name>ImageSendPage</name>
     <message>
+        <source>Comress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send image with comression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send image without comression, as file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Send image</source>
         <translation type="unfinished"></translation>
     </message>
