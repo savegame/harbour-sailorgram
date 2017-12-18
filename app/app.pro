@@ -16,24 +16,6 @@ emoji.files = $$PWD/res/emoji/*.png
 emoji.path  = /usr/share/$$TARGET/emoji
 INSTALLS += emoji
 
-# Lipstick Config
-#lipstick_config.files = $$PWD/lipstick/*.conf
-#lipstick_config.path  = /usr/share/lipstick/notificationcategories
-#INSTALLS    += lipstick_config
-#OTHER_FILES += $$lipstick_config.files
-
-# Events Config
-#events.files = $$PWD/events/*.ini
-#events.path  = /usr/share/ngfd/events.d
-#INSTALLS    += events
-#OTHER_FILES += $$events.files
-
-# MCE Config
-#mce.files = $$PWD/mce/*.ini
-#mce.path  = /etc/mce
-#INSTALLS    += mce
-#OTHER_FILES += $$mce.files
-
 # Headers
 HEADERS += \
     src/dbus/screenblank.h \
