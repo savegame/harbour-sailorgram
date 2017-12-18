@@ -10,7 +10,6 @@ Core::Core(QObject *parent) :
     this->_interface = new DBusInterface(this);
     this->_notifications = new TelegramNotifications(this);
 
-    connect(qApp, &QGuiApplication::applicationStateChanged, this, &Core::onApplicationStateChanged);
     connect(this->_notifications, &TelegramNotifications::newMessage, this, &Core::notify);
     connect(this->_interface, &DBusInterface::wakeUpRequested, this, &Core::onWakeUpRequested);
     connect(this->_interface, &DBusInterface::openDialogRequested, this, &Core::openDialogRequested);
@@ -161,7 +160,7 @@ void Core::setKeepRunning(bool keep)
 void Core::beep() const
 {
     Notification notification;
-    notification.setCategory("harbour.telega.notificationfg");
+    notification.setCategory("x-nemo.messaging.im");
     notification.setAppName(APP_PRETTY_NAME);
     notification.setTimestamp(QDateTime::currentDateTime());
     notification.publish();
@@ -198,7 +197,7 @@ void Core::notify(const NotificationObject *notificationobj)
     else
         notification = this->_notificationsmap[notificationobj->dialogId()];
 
-    notification->setCategory("harbour.telega.notification");
+    notification->setCategory("x-nemo.messaging.im");
     notification->setAppName(APP_PRETTY_NAME);
     notification->setTimestamp(QDateTime::currentDateTime());
 
@@ -221,17 +220,6 @@ void Core::closeNotification(Dialog *dialog)
     Notification* notification = this->_notificationsmap.take(dialogid);
     notification->close();
     notification->deleteLater();
-}
-
-void Core::onApplicationStateChanged(Qt::ApplicationState /*state*/)
-{
-//    bool active = state == Qt::ApplicationActive;
-
-//    if((!this->_daemonized && active) || (this->_daemonized && !active))
-//        return;
-
-//    this->_daemonized = !active;
-//    emit daemonizedChanged();
 }
 
 void Core::onNotificationClosed(uint)

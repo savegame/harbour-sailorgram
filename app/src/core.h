@@ -58,7 +58,6 @@ class Core : public QObject
     private slots:
         void notify(const NotificationObject *notificationobj);
         void closeNotification(Dialog* dialog);
-        void onApplicationStateChanged(Qt::ApplicationState state);
         void onNotificationClosed(uint);
         void onWakeUpRequested();
 
