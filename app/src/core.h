@@ -2,10 +2,10 @@
 #define CORE_H
 
 #include <QGuiApplication>
+#include <nemonotifications-qt5/notification.h>
 #include <objects/notifications/telegramnotifications.h>
 #include <objects/notifications/notificationobject.h>
 #include "dbus/interface/dbusinterface.h"
-#include "dbus/notification/notification.h"
 #include "item/translationinfoitem.h"
 
 class Core : public QObject

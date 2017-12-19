@@ -2,6 +2,7 @@ TARGET = harbour-telega
 
 CONFIG += c++11 sailfishapp libqtelegram
 QT     += sql dbus multimedia qml network
+PKGCONFIG += nemonotifications-qt5
 
 include($$TOP_SRC_DIR/libs/config.pri)
 
@@ -19,8 +20,6 @@ INSTALLS += emoji
 # Headers
 HEADERS += \
     src/dbus/screenblank.h \
-    src/dbus/notification/notification.h \
-    src/dbus/notification/notificationmanagerproxy.h \
     src/selector/audiorecorder.h \
     src/selector/thumbnailprovider.h \
     src/selector/exif/exif.h \
@@ -39,8 +38,6 @@ HEADERS += \
 SOURCES += \
     src/main.cpp \
     src/dbus/screenblank.cpp \
-    src/dbus/notification/notification.cpp \
-    src/dbus/notification/notificationmanagerproxy.cpp \
     src/selector/audiorecorder.cpp \
     src/selector/thumbnailprovider.cpp \
     src/selector/exif/exif.cpp \
