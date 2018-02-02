@@ -26,6 +26,10 @@ Page
 
         messagesmodel.dialog = dialog;
         firstLoad = false;
+
+        if (status == PageStatus.Active && messageslist.model.newMessageIndex >= 0 && messageslist.model.newMessageIndex < messageslist.count) {
+            messageslist.positionViewAtIndex(messageslist.model.newMessageIndex, ListView.Center);
+        }
     }
 
     MessagesModel
@@ -102,6 +106,7 @@ Page
             statusText: messagesmodel.statusText
             peer: dialogpage.dialog
             visible: !context.chatheaderhidden && dialogpage.isPortrait
+            height: visible ? implicitHeight : 0
         }
 
         MessagesList
