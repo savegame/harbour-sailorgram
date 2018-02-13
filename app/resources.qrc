@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/telegram.png</file>
+        <file>res/waiting.png</file>
+        <file>res/download.png</file>
+        <file>res/debug.png</file>
+        <file>res/preview.png</file>
+        <file>res/daemon.png</file>
+        <file>res/cover.png</file>
+        <file>res/close.png</file>
+        <file>res/twofactor.png</file>
+    </qresource>
+</RCC>
