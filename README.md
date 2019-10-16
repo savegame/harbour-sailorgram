@@ -18,3 +18,15 @@ Dependencies
 -----
 [Qt WebP Plugin](http://doc.qt.io/qt-5/qtimageformats-index.html) is needed in order to display Stickers:
 - Plugin Repository: https://code.qt.io/cgit/qt/qtimageformats.git/tree/src/plugins/imageformats/webp
+
+# How to build:
+
+* Install sailfish dev tools
+* pull this repo
+`git clone <repo url>`
+* pull the submodules
+`git submodule update --init`
+* Open the project in sailfish dev tools (qtcreator)
+* Setup some project runtime
+* Build
+* Deploy to vm or to real jolla

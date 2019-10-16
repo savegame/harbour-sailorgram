@@ -34,7 +34,7 @@ Page
 
             CollaboratorsLabel {
                 title: qsTr("Contributors");
-                labelData: [ "toxip", "thebootroo", "Maldela", "mentaljam" ]
+                labelData: [ "toxip", "thebootroo", "Maldela", "mentaljam", "SampoZ" ]
             }
 
             CollaboratorsLabel {
