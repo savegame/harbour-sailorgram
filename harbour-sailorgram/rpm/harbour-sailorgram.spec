@@ -47,9 +47,9 @@ An unofficial Telegram Client for SailfishOS
 rm -rf %{buildroot}
 %qmake5_install
 
-ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1
-ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1.0
-ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1.0.0
+#ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1
+#ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1.0
+#ln -s /usr/share/%{name}/lib/libQTelegram.so %{buildroot}/usr/share/%{name}/lib/libQTelegram.so.1.0.0
 
 desktop-file-install --delete-original       \
   --dir %{buildroot}%{_datadir}/applications             \

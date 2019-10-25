@@ -23,13 +23,13 @@ LIBS += -L$$LIBQTELEGRAM_LIB_DIR -lQTelegram
 INCLUDEPATH += $$LIBQTELEGRAM_INCLUDE_PATH
 
 # LibQTelegram
-libqtelegram.files = $$OUT_PWD/../LibQTelegram/libQTelegram.so
+libqtelegram.files = $$OUT_PWD/../LibQTelegram/libQTelegram.so*
 libqtelegram.path  = /usr/share/$$TARGET/lib
 INSTALLS += libqtelegram
 
 # WebP Plugin
 webp.files = $$OUT_PWD/../webp-plugin/plugins/imageformats/*.so
-webp.path  = /usr/share/$$TARGET/lib/imageformats
+webp.path  = /usr/share/$$TARGET/lib/imageformats/
 INSTALLS += webp
 
 # Telegram Public Key
