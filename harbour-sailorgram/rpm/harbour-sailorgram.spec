@@ -9,8 +9,8 @@ Name:       harbour-sailorgram
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    SailorGram
-Version:    0.89
-Release:    14
+Version:    0.9.8
+Release:    1
 Group:      Qt/Qt
 License:    GPL3
 URL:        https://github.com/QtGram/harbour-sailorgram/
